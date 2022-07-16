@@ -7,11 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  
-  
-<!--   responsive-tab-css  -->
-  
-  <style>
+</head>
+
+<body>
+
+
+    <div class="d-flex align-items-start responsive-tab-menu">
+
+        <ul class="nav flex-column nav-pills nav-tabs-dropdown me-3" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <li class="nav-item">
+                <a class="nav-link text-start active" href="#" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-start" href="#" id="v-pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                    aria-selected="false">Profile</a>
+            </li>
+        </ul>
+
+        <div class="tab-content responsive-tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+                tabindex="0">home content</div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+                tabindex="0">profile content</div>
+
+        </div>
+    </div>
+    <style>
         .responsive-tab-menu .nav-pills .nav-link.active,
         .responsive-tab-menu .nav-pills .show>.nav-link {
             color: unset;
@@ -101,38 +125,7 @@
             }
         }
     </style>
-  
-<!--    -->
-</head>
-
-<body>
-
-
-    <div class="d-flex align-items-start responsive-tab-menu">
-        <ul class="nav flex-column nav-pills nav-tabs-dropdown me-3" id="v-pills-tab" role="tablist"
-            aria-orientation="vertical">
-            <li class="nav-item">
-                <a class="nav-link text-start active" href="#" id="v-pills-home-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-start" href="#" id="v-pills-profile-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
-                    aria-selected="false">Profile</a>
-            </li>
-        </ul>
-
-        <div class="tab-content responsive-tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
-                tabindex="0">home</div>
-            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
-                tabindex="0">profile</div>
-
-        </div>
-    </div>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!--  responsive-tab-jquery   -->
     <script>
         $('.nav-tabs-dropdown')
             .on("click", ".nav-link:not('.active')", function (event) {
@@ -142,6 +135,6 @@
                 $(this).closest('ul').toggleClass("open");
             });
     </script>
-<!--    -->
 </body>
+
 </html>
