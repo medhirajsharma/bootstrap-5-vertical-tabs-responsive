@@ -110,7 +110,7 @@ Create tabs section and add class
 Create Tabs Menu
 
 ```
-<pre>
+
 <ul class="nav flex-column nav-pills nav-tabs-dropdown me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
     <li class="nav-item">
         <a class="nav-link text-start active" href="#" id="v-pills-home-tab" data-bs-toggle="pill"
@@ -122,16 +122,16 @@ Create Tabs Menu
             aria-selected="false">Profile</a>
     </li>
 </ul>
-</pre>
+
 ```
 Create tab content
 ```
-<pre>
+
 <div class="tab-content responsive-tab-content" id="v-pills-tabContent">
     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"tabindex="0">home</div>
     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">profile</div>
 </div>
-</pre>
+
 ```
 Add jQuery
 
